@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Expense Tracker</h1>
+
+    <!-- Summary -->
+    <div class="summary">
+        <p>Total Income: ₹<span id="income">0</span></p>
+        <p>Total Expense: ₹<span id="expense">0</span></p>
+        <p>Net Balance: ₹<span id="balance">0</span></p>
+    </div>
+
+    <!-- Form -->
+    <div class="form">
+        <input type="date" id="date">
+        <input type="text" id="desc" placeholder="Description">
+        
+        <select id="category">
+            <option value="">Select Category</option>
+            <option>Food</option>
+            <option>Transport</option>
+            <option>Entertainment</option>
+            <option>Salary</option>
+            <option>Other</option>
+        </select>
+
+        <input type="number" id="amount" placeholder="Amount">
+
+        <select id="type">
+            <option value="">Type</option>
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+        </select>
+
+        <button onclick="addTransaction()">Add</button>
+        <p id="error"></p>
+    </div>
+
+    <!-- Transaction List -->
+    <ul id="list"></ul>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

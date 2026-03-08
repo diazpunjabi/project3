@@ -1,0 +1,78 @@
+body {
+    font-family: Arial;
+    background: #f4f4f4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.summary {
+    background: #e0f7fa;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.form input, .form select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #0288d1;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0277bd;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #fafafa;
+    padding: 8px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.income {
+    color: green;
+}
+
+.expense {
+    color: red;
+}
+
+#error {
+    color: red;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+}
